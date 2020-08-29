@@ -1,0 +1,36 @@
+#######################################
+# Syntax Coloring Map
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+LiteScheduler	KEYWORD1
+LiteSchedulerTask	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+addTask	KEYWORD2
+run	KEYWORD2
+enable	KEYWORD2
+enableIfNot	KEYWORD2
+disable	KEYWORD2
+delay	KEYWORD2
+changeInterval	KEYWORD2
+isOverrun	KEYWORD2
+execute	KEYWORD2
+addTask	KEYWORD2
+reset	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+
+TIME_ALWAYS	LITERAL1
+TIME_1S	LITERAL1
+TIME_1M	LITERAL1
+TIME_1H	LITERAL1
+
+#######################################
