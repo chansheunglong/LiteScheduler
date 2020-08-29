@@ -22,25 +22,30 @@ Create task:
 ```ruby
 LiteSchedulerTask <Task Name>(<Task Function>, <Interval>);
 ```
+e.g. LiteSchedulerTask TASK_test1(&someAction, TIME_ALWAYS);
 
 
 Enable task:
 ```ruby
 <Task Name>.enable();
 ```
+e.g. TASK_test1.enable();
 
-Set scheduler size:
+Create scheduler:
 ```ruby
 LiteScheduler <Scheduler Name>;
 ```
+e.g. LiteScheduler runner;
 
 Add task to scheduler:
 ```ruby
 <Scheduler Name>.addTask(&<Task Name>);
 ```
+e.g. runner.addTask(&TASK_test1);
 
 In loop(), add the following call to schedule all task
 ```ruby
 <Scheduler Name>.execute();
 ```
+e.g. runner.execute();
    
