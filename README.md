@@ -22,7 +22,7 @@ Scheduling overhead is around 8 microseconds per scheduling pass (ATMEGA328PB @ 
 ```
 LiteSchedulerTask <Task Name>(<Task Function>, <Interval>);
 ```
-e.g. LiteSchedulerTask TASK_test1(&someAction, TIME_ALWAYS);
+> LiteSchedulerTask TASK_test1(&someAction, TIME_ALWAYS);
 ----
 
 ##### Enable task:
