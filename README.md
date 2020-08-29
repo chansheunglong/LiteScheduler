@@ -18,33 +18,37 @@ Scheduling overhead is around 8 microseconds per scheduling pass (ATMEGA328PB @ 
 
 ### Usage
 
-Create task:
-```ruby
+##### Create task:
+```
 LiteSchedulerTask <Task Name>(<Task Function>, <Interval>);
 ```
 e.g. LiteSchedulerTask TASK_test1(&someAction, TIME_ALWAYS);
+----
 
-
-Enable task:
-```ruby
+##### Enable task:
+```
 <Task Name>.enable();
 ```
 e.g. TASK_test1.enable();
+----
 
-Create scheduler:
-```ruby
+
+##### Create scheduler:
+```
 LiteScheduler <Scheduler Name>;
 ```
 e.g. LiteScheduler runner;
+----
 
-Add task to scheduler:
-```ruby
+##### Add task to scheduler:
+```
 <Scheduler Name>.addTask(&<Task Name>);
 ```
 e.g. runner.addTask(&TASK_test1);
+----
 
-In loop(), add the following call to schedule all task
-```ruby
+##### In loop(), add the following call to schedule all task
+```
 <Scheduler Name>.execute();
 ```
 e.g. runner.execute();
