@@ -29,7 +29,7 @@ e.g. LiteSchedulerTask TASK_test1(&someAction, TIME_ALWAYS);
 ```
 <Task Name>.enable();
 ```
-> e.g. TASK_test1.enable();
+> TASK_test1.enable();
 ----
 
 
@@ -37,19 +37,19 @@ e.g. LiteSchedulerTask TASK_test1(&someAction, TIME_ALWAYS);
 ```
 LiteScheduler <Scheduler Name>;
 ```
-> e.g. LiteScheduler runner;
+> LiteScheduler runner;
 ----
 
 ##### Add task to scheduler:
 ```
 <Scheduler Name>.addTask(&<Task Name>);
 ```
-> e.g. runner.addTask(&TASK_test1);
+> runner.addTask(&TASK_test1);
 ----
 
 ##### In loop(), add the following call to schedule all task
 ```
 <Scheduler Name>.execute();
 ```
-> e.g. runner.execute();
+> runner.execute();
    
