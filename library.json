@@ -1,0 +1,22 @@
+{
+  "name": "LiteScheduler",
+  "keywords": "litescheduler, taskscheduler, scheduling",
+  "description": "Task scheduler for Arduino that provide all basic feature and consume minimal system resource",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/chansheunglong/LiteScheduler"
+  },
+  "authors":
+  [
+    {
+      "name": "Chan Sheung Long",
+      "email": "",
+      "url": "https://github.com/chansheunglong/",
+      "maintainer": true
+    }
+  ],
+  "version": "1",
+  "frameworks": "arduino",
+  "platforms": "*"
+}
